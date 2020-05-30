@@ -31,7 +31,7 @@
             <h4><a href="paginas/listaprodutos.html">Lista de Produtos</a></h4>
         </div>
 
-        <div class="box d">
+        <div class="box d" id="conteudo">
             <h1>Linguagens</h1>
             <img class="conteudo" src="img/div_conteudo.jpg" alt="">
         </div>
@@ -42,5 +42,17 @@
         </div>
 
       </div>
+      <script>
+        document.querySelectorAll('[wm-nav]').forEach(link => {
+            const conteudo = document.getElementById('conteudo')
+
+            link.onclick = function (e) {
+                e.preventDefault()
+                fetch(link.getAttribute('wm-nav'))
+                    .then(resp => resp.text())
+                    .then(html => conteudo.innerHTML = html)
+            }
+        })
+    </script>
 </body>
 </html>
