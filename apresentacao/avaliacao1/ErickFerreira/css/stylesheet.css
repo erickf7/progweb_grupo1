@@ -19,6 +19,12 @@ body {
         font-size: 150%;
 
     }
+    .tabcontent{
+        display: none;
+    }
+    .tabcontent table{
+        display: none;
+    }
     .Web{
         font-size: 22pt;
         font-family: sans-serif;
@@ -41,8 +47,15 @@ body {
         display: block;
         
     }
+    .cps{
+            display: flex;
+            justify-content: center;
+            width: 40%;
+            margin-left: auto;
+            margin-right: auto;
+    }
     .conteudo{
-        display: block;
+        display: flex;
         margin-left: auto;
         margin-right: auto;
         width: 30%;

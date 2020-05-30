@@ -19,22 +19,172 @@
 
         <div class="box c">
             <h2>Atividades Menu</h2>
-            <h4><a href="paginas/htmlintro.html">HTML Introduction</a></h4>
-            <h4><a href="paginas/htmlid.html">HTML Id</a></h4>
-            <h4><a href="paginas/htmlclass.html">HTML class</a></h4>
-            <h4><a href="paginas/htmlforms.html">HTML Forms</a></h4>
-            <h4><a href="paginas/CSSintro.html">CSS Introduction</a></h4>
-            <h4><a href="paginas/CSSborders.html">CSS Borders</a></h4>
-            <h4><a href="paginas/CSSmargins.html">CSS Margins</a></h4>
-            <h4><a href="paginas/CSSpadding.html">CSS Paddings</a></h4>
+            <li><a  class="tablinks" onclick="openCity(event, 'htmlintroduction')" href="#htmlintroduction">HTML Intro </a></li>
+            <li><a  class="tablinks" onclick="openCity(event, 'id')" href="#id">HTML id</a></li>
+            <li><a  class="tablinks" onclick="openCity(event, 'class')" href="#class">HTML classes</a></li>
+            <li><a  class="tablinks" onclick="openCity(event, 'forms')" href="#forms">HTML Forms</a></li>
+            <li><a  class="tablinks" onclick="openCity(event, 'cssintroduction')" href="#cssintroduction">CSS Intro</a></li>
+            <li><a  class="tablinks" onclick="openCity(event, 'borders')" href="#borders">CSS Bordas</a></li>
+            <li><a  class="tablinks" onclick="openCity(event, 'margin')" href="#margin">CSS Margens</a></li>
+            <li><a  class="tablinks" onclick="openCity(event, 'padding')" href="#padding">CSS Padding</a></li>
         <h2>Atividades Tabela</h2>
-            <h4><a href="paginas/listaprodutos.html">Lista de Produtos</a></h4>
+            <li><a class="tablinks" onclick="openCity(event, 'tabela')" href="#tabela">Lista de Produtos</a></li>
         </div>
 
         <div class="box d" id="conteudo">
-            <h1>Linguagens</h1>
-            <img class="conteudo" src="img/div_conteudo.jpg" alt="">
+            <div class="active" id="defaultOpen">
+                <h1>Linguagens</h1>
+                <img class="conteudo" src="img/div_conteudo.jpg" alt="">
+            </div>
+           
+            <div id="htmlintroduction" class="tabcontent">
+                <h3>What is HTML?</h3>
+          
+                <ul class="list">
+                  <li>HTML stands for Hyper Text Markup Language</li>
+                  <li>HTML describes the structure of a Web page</li>
+                  <li>HTML consists of a series of elements</li>
+                  <li>HTML elements tell the browser how to display the content</li>
+                  <li>HTML elements are represented by tags</li>
+                  <li>HTML tags label pieces of content such as "heading", "paragraph", "table", and so on</li>
+                  <li>Browsers do not display the HTML tags, but use them to render the content of the page</li>
+                </ul>
+              </div>
+          
+              <div id="id" class="tabcontent">
+                <h2>HTML The id Attribute</h2>
+                <ul>
+                <li>The HTML id attribute is used to specify a unique id for an HTML element (the value must be unique within the HTML document).</li>
+            </ul>
+                <h2>Using The id Attribute</h2>
+                <ul>
+                <li>The id attribute is used by CSS or JavaScript to perform certain tasks for the element with the specific id value.</li>
+                <li>In CSS, to select an element with a specific id, write a hash (#) character, followed by the id of the element:</li>
+            </ul>
+              </div>
+          
+              <div id="class" class="tabcontent">
+                <h2>HTML The class Attribute</h2>
+                <ul>
+                <li>The HTML class attribute is used to define equal styles for elements with the same class name.</li>
+            </ul>
+                <h3>Using The class Attribute</h3>
+                <ul>
+                <li>All HTML elements with the same class attribute will get the same style.</li>
+                <li>Here we have three <div> elements that point to the same class name:</li>
+            </ul>
+              </div>
+          
+              <div id="forms" class="tabcontent">
+                <h2>HTML Forms</h2>
+        <ul>
+            <li>An HTML form is used to collect user input. The user input can then be sent to a server for processing.</li>
+        </ul>
+        <h2>The <form> Element</h2>
+            <ul>
+                <li>The HTML <form> element defines a form that is used to collect user input</li>
+                <li>An HTML form contains form elements.</li>
+                <li>Form elements are different types of input elements, like: text fields, checkboxes, radio buttons, submit buttons, and more.</li>
+            </ul>
+            <h2>The input Element</h2>
+            <ul>
+            <li>The input element is the most important form element.</li>
+            <li>The input element is displayed in several ways, depending on the type attribute.</li>
+        </ul>
+              </div>
+          
+              <div id="cssintroduction" class="tabcontent">
+                <h2>CSS Introduction</h2>
+            <   h2>What is CSS?</h2>
+                <ul>
+                <li>CSS stands for Cascading Style Sheets</li>
+                <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+                <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
+                <li>External stylesheets are stored in CSS files</li>
+        </ul>
+              </div>
+          
+              <div id="borders" class="tabcontent">
+                <h2>CSS Borders</h2>
+                <h3>CSS Border Properties</h3>
+                <ul>
+                    <li>The CSS border properties allow you to specify the style, width, and color of an element's border.</li>
+                </ul>
+                <h2>CSS Border Style</h2>
+                <ul>
+                    <li>The border-style property specifies what kind of border to display.</li>
+                    <li>The following values are allowed:</li>
+                        <li>dotted - Defines a dotted border</li>
+                        <li>dashed - Defines a dashed border</li>
+                        <li>solid - Defines a solid border</li>
+                        <li>double - Defines a double border</li>
+                        <li>groove - Defines a 3D grooved border. The effect depends on the border-color value/li>
+                        <li>ridge - Defines a 3D ridged border. The effect depends on the border-color value</li>
+                        <li>inset - Defines a 3D inset border. The effect depends on the border-color value</li>
+                        <li>outset - Defines a 3D outset border. The effect depends on the border-color value</li>
+                        <li>none - Defines no border</li>
+                        <li>hidden - Defines a hidden border</li>
+                    <li>The border-style property can have from one to four values (for the top border, right border, bottom border, and the left border).</li>
+              </div>
+          
+              <div id="margin" class="tabcontent">
+                <h2>CSS Margins</h2>
+                <ul>
+                    <li>The CSS margin properties are used to create space around elements, outside of any defined borders.</li>
+                    <li>With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element (top, right, bottom, and left).</li>
+                </ul>
+                <h2>Margin - Individual Sides</h2>
+                <ul>
+                    <li>CSS has properties for specifying the margin for each side of an element:</li>
+                        <li>margin-top</li>
+                        <li>margin-right</li>
+                        <li>margin-left</li>
+                        <li>margin-right</li>
+                </ul>
+              </div>
+          
+              <div id="padding" class="tabcontent">
+                <h2>CSS Padding</h2>
+                <ul>
+                    <li>The CSS padding properties are used to generate space around an element's content, inside of any defined borders.</li>
+                    <li>With CSS, you have full control over the padding. There are properties for setting the padding for each side of an element (top, right, bottom, and left).</li>
+                </ul>
+                <h2>Padding - Individual Sides</h2>
+                <ul>
+                    <li>CSS has properties for specifying the padding for each side of an element:</li>
+                        <li>padding-top</li>
+                        <li>padding-right</li>
+                        <li>padding-bottom</li>
+                        <li>padding-left</li>
+                </ul>
+              </div>
+              <div id="tabela" class="tabcontent table">
+                <h2>HTML Table</h2>
+                <table>
+                  <tr>
+                    <th>Produto</th>
+                    <th>Quantidade</th>
+                    <th>Valor</th>
+                  </tr>
+                  <tr>
+                    <td>Arroz 5kg</td>
+                    <td>5 sacos</td>
+                    <td>R$ 50</td>
+                  </tr>
+                  <tr>
+                    <td>Feijão 5kg</td>
+                    <td>3 sacos</td>
+                    <td>R$ 30</td>
+                  </tr>
+                  <tr>
+                    <td>Carne picanha</td>
+                    <td>2kg</td>
+                    <td>R$ 50</td>
+                  </tr>
+                </table>
+              </div>
         </div>
+        
 
         <div class="box e">
             <h2>Fatec Taquaritinga</h2>
@@ -42,7 +192,7 @@
         </div>
 
       </div>
-      <script>
+      <script src="prova.js">
         document.querySelectorAll('[wm-nav]').forEach(link => {
             const conteudo = document.getElementById('conteudo')
 
@@ -53,6 +203,7 @@
                     .then(html => conteudo.innerHTML = html)
             }
         })
+        
     </script>
 </body>
 </html>
